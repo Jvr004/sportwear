@@ -21,27 +21,34 @@
   </div>
   <br>
   <form action="">
-    <label for="nombre" placeholder="Ej:Maria Perez ">Nombre</label>
+    <fieldset>
+      <legend>Datos de contacto</legend>
+      <label for="nombre" placeholder="Ej:Maria Perez ">Nombre: </label>
+      <br>
+      <input type="text" id="nombre" name="nombre" placeholder="ej: María" pattern="^[A-Za-z]+$" title="Este campo solp acepta letras" autofocus required>
+      <br>
+      <label for="apellido">Apellido: </label>
+      <br> 
+    <input type="text" id="apellido" name="apellido" placeholder="ej: Perez" pattern="^[A-Za-z]+$" title="Este campo solp acepta letras" required>
     <br>
-    <input type="text" id="nombre" name="nombre" placeholder="ej: María" required>
-    <br>
-    <label for="apellido">Apellido</label>
-    <br>
-    <input type="text" id="apellido" name="apellido" placeholder="ej: Perez" required>
-    <br>
-    <label for="email">Email</label>
+    <label for="email">Email: </label>
     <br>
     <input type="email" id="email" name="email" placeholder="ej: tuemail@email.com" required>
     <br>
-    <label for="tel">Teléfono</label>
+    <label for="tel">Teléfono: </label>
     <br>
-    <input type="tel" id="tel" name="tel" placeholder="ej: 2664111111" required>
+    <input type="tel" id="tel" name="tel" placeholder="ej: 2664111111" size="13" required>
     <br>
-    <label for="textarea">Mensaje</label>
+    <label for="mensaje">Mensaje: </label>
     <br>
-    <textarea name="textarea" id="textarea" placeholder="ej: Tu mensaje"></textarea>
+    <textarea name="mensaje" id="mensaje" rows="10" cols="30" placeholder="ej: Tu mensaje"></textarea>
     <br>
     <button>Enviar</button>
+    <input type="reset" value="Restablecer">
+    <br>
+    <label for="mas-info">Haga clic a continuacion si desea recibir más informacion </label>
+    <input type="checkbox" name="mas-info" id="mas-info" checked>
+  </fieldset>
   </form>
   
 </body>
