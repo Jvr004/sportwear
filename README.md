@@ -6,9 +6,9 @@
 
 #### Con menú de navegación y enlaces a las demás páginas.
 
-#### Artículo. Con posibilidad de volver a la página principal.
+### Artículo. Con posibilidad de volver a la página principal.
 
-#### Formulario de contacto
+### Formulario de contacto
 
  Al menos 3 campos. Alguno debe ser distinto a texto. Combinar validaciones de campos obligatorios, longitud máxima y uso de expresiones regulares.
 
