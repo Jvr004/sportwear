@@ -1,0 +1,177 @@
+/* ********** Custom Properties 
+********** */
+:root {
+  --color-primario: #6d3a5a;
+  --color-secundario: #e1f1f3;
+  --font-primary: Avenir, system-ui, sans-serif;
+  --font-size: 16px;
+}
+/* ********** Reset ********** */
+body{
+  
+}
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* ********** Components ********** */
+/* ********** Utilities ********** */
+/* ********** Site Styles ********** */
+
+/* Estilos header */
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 10px;
+  gap: 15px;
+  background: var(--color-primario);
+}
+
+/* estilos logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  height: min-content;
+}
+
+.logo img {
+  width: 80px;
+  height: min-content;
+  border-radius: 50%;
+}
+
+/* Estilos links */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: min-content;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  height: min-content;
+}
+
+nav ul a {
+  display: flex;
+  width: min-content;
+  height: min-content;
+  padding: 0px 10px;
+  color: var(--color-secundario);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
+
+/* Estilos para redes y up */
+
+.redes-mas-up{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  position: sticky;
+  border-radius: 10px;
+  bottom: 50px;
+
+}
+
+.redes-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 150px;
+  border-radius: 10px;
+  gap: 10px;
+  color: var(--color-secundario);
+  font-weight: bold;
+  background: var(--color-primario);
+}
+
+.up{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 45px;
+  border-radius: 30%;
+  color: var(--color-secundario);
+  font-weight: bold;
+  background: var(--color-primario);
+}
+
+.redes-contacto a,
+.up a{
+  color: var(--color-secundario);
+  text-decoration: none;
+}
+
+.redes-mas-up i{
+  font-size: 25px;
+}
+
+/* Inicio Estilos footer */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  flex-flow: row wrap;
+  background-color: var(--color-primario);
+  height: min-content;
+  padding: 10px;
+}
+
+
+/* Estilos de links */
+
+footer ul{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 50%;
+  padding: 10px;
+  margin: 20px;
+  background-color: #98a1b1bb;
+}
+
+/* Estilos de redes sociales */
+
+footer ul li > a {
+  display: block;
+  color: var(--color-secundario);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 10px;
+  letter-spacing: 10px;
+
+}
