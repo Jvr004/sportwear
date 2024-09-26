@@ -125,6 +125,7 @@ nav ul a {
   color: var(--color-secundario);
   font-weight: bold;
   background: var(--color-primario);
+  scroll-behavior: smooth;
 }
 
 .redes-contacto a,
