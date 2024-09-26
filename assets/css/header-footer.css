@@ -59,16 +59,19 @@ header {
 nav {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
   align-items: center;
-  width: 50%;
+  width: auto;
   height: min-content;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-evenly;
-  align-content: center;
+  justify-content: baseline;
+  align-content: baseline;
+  align-items: baseline;
   flex-flow: row wrap;
   width: 100%;
   height: min-content;
@@ -76,14 +79,14 @@ nav ul {
 
 nav ul a {
   display: flex;
-  width: min-content;
+  width: auto;
   height: min-content;
   padding: 0px 10px;
   color: var(--color-secundario);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 
 
