@@ -1,0 +1,73 @@
+/* ********** Custom Properties 
+********** */
+:root {
+  --color-primario: #6d3a5a;
+  --color-secundario: #e1f1f3;
+  --font-primary: Avenir, system-ui, sans-serif;
+  --font-size: 16px;
+}
+/* ********** Reset ********** */
+body{
+  
+}
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* ********** Components ********** */
+/* ********** Utilities ********** */
+/* ********** Site Styles ********** */
+.guia-talle-remeras,
+.guia-talle-pantalon,
+.guia-talle-zapatillas{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.description-talla{
+  width: 100%;
+  text-transform: uppercase;
+  font-size: larger;
+  padding: 15px;
+  margin: 10px;
+}
+
+table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+thead{
+  border-bottom: 2px solid #6d3a5a ;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td, th{
+  border-bottom: 2px solid #6d3a5a;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+tr:nth-child(even){
+  background-color: var(--color-primario);
+}
+
+tr:hover{
+  background-color: #e1f1f3;
+}
+

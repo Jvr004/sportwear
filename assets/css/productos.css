@@ -1,0 +1,90 @@
+/* ********** Custom Properties 
+********** */
+:root {
+  --color-primario: #6d3a5a;
+  --color-secundario: #e1f1f3;
+  --font-primary: Avenir, system-ui, sans-serif;
+  --font-size: 16px;
+}
+/* ********** Reset ********** */
+body{
+  
+}
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* ********** Components ********** */
+/* ********** Utilities ********** */
+/* ********** Site Styles ********** */
+
+/* Estilos header */
+
+.container-zapatillas{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color:var(--color-secundario);
+  max-width: 100%;
+  min-width: 10%;
+  height: fit-content;
+  gap: 1px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.description-general{
+  width: 100%;
+  text-transform: uppercase;
+  font-size: larger;
+  padding: 15px;
+  margin: 10px;
+}
+
+.product-card{
+  background-color: var(--color-primario);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-width: 300px;
+  max-height: min-content;
+  padding: 10px;
+  margin: 25px 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.product-card img{
+  max-width: 100%;
+  min-width: 300px;
+  min-height: 250px;
+  padding: 10px 10px;
+  margin: 10px 10px;
+
+}
+
+.product-card footer{ 
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
