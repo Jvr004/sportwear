@@ -1,15 +1,16 @@
 /* ********** Custom Properties 
 ********** */
 :root {
+  --bg-color: #000;
   --color-primario: #6d3a5a;
   --color-secundario: #e1f1f3;
+  --color-terciario: #FFd35e;
+  --other-color: #FF65b5;
   --font-primary: Avenir, system-ui, sans-serif;
   --font-size: 16px;
 }
 /* ********** Reset ********** */
-body{
-  
-}
+
 html {
   font-family: var(--font-primary);
   scroll-behavior: smooth;
@@ -26,17 +27,34 @@ html {
 /* ********** Utilities ********** */
 /* ********** Site Styles ********** */
 
+
 /* Estilos header */
 
-header {
+header{
+  background: var(--color-primario);
+  width: 100%;
+}
+
+/* Estilos main */
+body{
+  background-color: #e1f1f3;
+}
+
+/* Estilos a section */
+
+section{
+  width:inherit;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* Estilos nav */
+
+.nav-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 100vw;
-  padding: 10px;
-  gap: 15px;
-  background: var(--color-primario);
 }
 
 /* estilos logo */
@@ -44,7 +62,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  width: max-content;
+  min-width: fit-content;
   height: min-content;
 }
 
@@ -54,45 +72,86 @@ header {
   border-radius: 50%;
 }
 
-/* Estilos links */
-
-nav {
+.nav-container ul {
   display: flex;
-  justify-content: center;
   flex-flow: row wrap;
+  justify-content: space-around;
   align-content: center;
-  align-items: center;
-  width: auto;
-  height: min-content;
-  padding: 0 10px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: baseline;
-  align-content: baseline;
   align-items: baseline;
-  flex-flow: row wrap;
-  width: 100%;
+  max-width: 100%;
+  min-width: fit-content;
   height: min-content;
 }
 
-nav ul a {
+.nav-container ul li{
+  padding: 0 40px;
+}
+
+.nav-container ul a {
+  color: var(--color-secundario);
   display: flex;
+  flex-wrap: wrap;
   width: auto;
   height: min-content;
-  padding: 0px 10px;
-  color: var(--color-secundario);
+  padding: 5px 10px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: 5px;
 }
 
+ul a:hover{
+  border-bottom: 1px solid var(--color-secundario);
+  color: #000;
+}
+
+
+/* Estilos video */
+
+.container-video{
+  background-color: #000;
+  display: flex;
+  min-width: fit-content;
+  max-width: fit-content;
+  
+  
+}
+
+video{
+  width: 100%;
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+
+/* Estilos carrousel */
+
+.container-carrousel{
+  background-color: #000;
+  display: flex;
+  flex-grow: 1;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+}
+
+.container-carrousel img{
+  width: 100%;
+  height: 500px;
+  margin: 5px 5px;
+  background: var(--other-color);
+  flex: 1; 
+  mask-image: linear-gradient(black 90%, transparent); /*avitar que se vea el recorte de la imagen*/
+  object-fit: cover; /*Recorta la imagen sin perder calidad*/
+  /*border-radius: 5px;
+  scroll-snap-align: center;*/
+}
+
 
 /* Estilos para redes y up */
 
-.redes-mas-up{
+.container-redes-up{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,7 +159,6 @@ nav ul a {
   position: sticky;
   border-radius: 10px;
   bottom: 50px;
-
 }
 
 .redes-contacto {
@@ -141,6 +199,7 @@ nav ul a {
   font-size: 25px;
 }
 
+
 /* Inicio Estilos footer */
 
 footer {
@@ -153,9 +212,6 @@ footer {
   padding: 10px;
 }
 
-
-/* Estilos de links */
-
 footer ul{
   display: flex;
   flex-flow: column wrap;
@@ -164,10 +220,8 @@ footer ul{
   width: 50%;
   padding: 10px;
   margin: 20px;
-  background-color: #98a1b1bb;
+  /* background-color: #98a1b1bb; */
 }
-
-/* Estilos de redes sociales */
 
 footer ul li > a {
   display: block;
@@ -179,3 +233,4 @@ footer ul li > a {
   letter-spacing: 10px;
 
 }
+

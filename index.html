@@ -5,63 +5,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="En este sitio encontraras las mejores prendas deportivas y más.">
-  
+
+  <title>SportWear</title>
+  <!-- Favicon -->
   <link rel="shortcut icon" href="/assets/img/img-header/img-logo.png" type="image/x-icon">
-  
+  <!-- Font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-    <link rel="stylesheet" href="assets/css/header-footer.css">
-
-  <title>SportWear</title>
-
+  <!-- Css -->
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
 
-
   <header id="header">
-    <div class="logo">
-      <a href="index.html"><img src="assets/img/img-header/Logo.gif" alt="gif logo"></a>      
-    </div>
-    <nav>
+
+    <nav class="nav-container">
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/img-header/Logo.gif" alt="gif logo"></a>
+      </div>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="pages/productos.html">Productos</a></li>
+        <li><a href="#productos">Productos</a></li>
         <li><a href="pages/about-us.html">Sobre Nosotros</a></li>
-        <li><a href="login.html">Login</a></li>
+      </ul>
+      <ul>
+        <li><a href="pages/formulario-contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section><video loop="" muted="" autoplay="" playsinline="">
-        <source
-          src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_1920,w_1920/Training_FW_24_Dropset3_Global_Launch_GLP_Male_Hero_Banner_d_6692aa3301.mp4"
-          type="video/mp4" width="2880" height="1280" media="(min-width: 960px)">
 
-      </video></section>
     <section>
-
+      <div class="container-video">
+        <video loop="" muted="" autoplay="" playsinline="">
+          <source
+            src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_1920,w_1920/Training_FW_24_Dropset3_Global_Launch_GLP_Male_Hero_Banner_d_6692aa3301.mp4"
+            type="video/mp4" width="2880" height="1280" media="(min-width: 960px)">
+        </video>
+      </div>
     </section>
-    <section></section>
-    <section></section>
+    <section>
+      <div class="carrousel">
+        <div class="container-carrousel">
+          <div class="slider">
+            <a href="pages/remeras-camisetas.html"><img src="assets/img/img-carousel/camiseta-seleccion.png"
+                alt="imagen descuento"></a>
+            <a href="pages/zapatillas.html"><img src="assets/img/img-carousel/banner-zapatillas.png"
+                alt="imagen descuento"></a>
+            <a href="pages/pantalones.html">
+              <img src="assets/img/img-carousel/pantalones-banner.png" alt="imagen descuento"></a>
+          </div>
+        </div>
+      </div>
   </main>
 
-
-  <div class="redes-mas-up">
+  <div class="container-redes-up">
     <div class="redes-contacto">
-    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"> <i
-        class="fa-brands fa-whatsapp fa-beat"></i></a>
-    <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook fa-beat"> </i></a>
+      <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"> <i
+          class="fa-brands fa-whatsapp fa-beat"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook fa-beat"> </i></a>
 
-    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-beat"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-beat"></i></a>
 
-    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-beat"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-beat"></i></a>
 
+    </div>
 
-  </div>
     <div class="up">
       <a href="#header">
         <i class="fa-solid fa-angle-up fa-beat"></i>
