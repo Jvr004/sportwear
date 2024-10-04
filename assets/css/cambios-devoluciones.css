@@ -1,0 +1,69 @@
+/* ********** Custom Properties 
+********** */
+:root {
+  --bg-color: #000;
+  --color-primario: #6d3a5ade;
+  --color-secundario: #e9eff0;
+  --color-terciario: #e7f529;
+  --other-color: #ff65b5;
+  --font-primary: Avenir, system-ui, sans-serif;
+  --font-size: 16vw;
+}
+/* ********** Reset ********** */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
+/* Estilos main */
+body {
+  background-color: #e1f1f3;
+}
+
+.titulo { 
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+
+
+/* Estilos Section */
+
+section{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.cambios h2,
+.devoluciones h2{
+  background-color: var(--color-primario);
+  width: 100%;
+}
+
+.cambios h2,
+.devoluciones h2{
+  font-size: x-large;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 10px;
+}

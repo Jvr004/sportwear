@@ -2,20 +2,14 @@
 ********** */
 :root {
   --bg-color: #000;
-  --color-primario: #6d3a5a;
-  --color-secundario: #e1f1f3;
-  --color-terciario: #FFd35e;
-  --other-color: #FF65b5;
+  --color-primario: #6d3a5ade;
+  --color-secundario: #e9eff0;
+  --color-terciario: #e7f529;
+  --other-color: #ff65b5;
   --font-primary: Avenir, system-ui, sans-serif;
-  --font-size: 16px;
+  --font-size: 16vw;
 }
 /* ********** Reset ********** */
-
-html {
-  font-family: var(--font-primary);
-  scroll-behavior: smooth;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -23,29 +17,23 @@ html {
   text-decoration: none;
   list-style-type: none;
 }
-/* ********** Components ********** */
-/* ********** Utilities ********** */
-/* ********** Site Styles ********** */
+
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
 
 
 /* Estilos header */
 
-header{
+header {
   background: var(--color-primario);
   width: 100%;
 }
 
 /* Estilos main */
-body{
+body {
   background-color: #e1f1f3;
-}
-
-/* Estilos a section */
-
-section{
-  width:inherit;
-  margin-bottom: 10px;
-  padding: 10px;
 }
 
 /* Estilos nav */
@@ -54,6 +42,7 @@ section{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  align-content: center;
   align-items: center;
 }
 
@@ -70,6 +59,7 @@ section{
   width: 80px;
   height: min-content;
   border-radius: 50%;
+  opacity: 0.8;
 }
 
 .nav-container ul {
@@ -80,44 +70,52 @@ section{
   align-items: baseline;
   max-width: 100%;
   min-width: fit-content;
-  height: min-content;
+  height: max-content;
 }
 
-.nav-container ul li{
-  padding: 0 40px;
+.nav-container ul li {
+  padding: 0 10px;
 }
 
-.nav-container ul a {
+.nav-container li a {
   color: var(--color-secundario);
   display: flex;
   flex-wrap: wrap;
-  width: auto;
+  width: max-content;
   height: min-content;
   padding: 5px 10px;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.5rem;
-  letter-spacing: 5px;
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 3px;
 }
 
-ul a:hover{
+.nav-links li a:hover {
   border-bottom: 1px solid var(--color-secundario);
   color: #000;
 }
 
 
+.acces-login li a i {
+  font-size: 35px;
+  color: var(--color-terciario);
+}
+
+.access-login li a:hover {
+  color: var(--bg-color);
+  font-size: 40px;
+}
+
 /* Estilos video */
 
-.container-video{
+.container-video {
   background-color: #000;
   display: flex;
   min-width: fit-content;
   max-width: fit-content;
-  
-  
 }
 
-video{
+.container-video video {
   width: 100%;
   padding: 5px 5px;
   margin: 5px 5px;
@@ -125,7 +123,7 @@ video{
 
 /* Estilos carrousel */
 
-.container-carrousel{
+.container-carrousel {
   background-color: #000;
   display: flex;
   flex-grow: 1;
@@ -136,69 +134,103 @@ video{
   overflow-x: auto;
 }
 
-.container-carrousel img{
+.container-carrousel img {
   width: 100%;
   height: 500px;
   margin: 5px 5px;
   background: var(--other-color);
-  flex: 1; 
-  mask-image: linear-gradient(black 90%, transparent); /*avitar que se vea el recorte de la imagen*/
+  mask-image: linear-gradient(
+    black 90%,
+    transparent
+  ); /*avitar que se vea el recorte de la imagen*/
   object-fit: cover; /*Recorta la imagen sin perder calidad*/
   /*border-radius: 5px;
   scroll-snap-align: center;*/
 }
 
-
 /* Estilos para redes y up */
 
-.container-redes-up{
+.container-redes-socroll-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
   position: sticky;
-  border-radius: 10px;
   bottom: 50px;
+  z-index: 9999;
 }
 
-.redes-contacto {
+.redes-contacto,
+.scroll-top {
+  color: var(--color-secundario);
+  background: var(--color-primario);
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   width: 40px;
-  height: 150px;
+  height: fit-content;
   border-radius: 10px;
-  gap: 10px;
-  color: var(--color-secundario);
+  gap: 15px;
   font-weight: bold;
-  background: var(--color-primario);
 }
 
-.up{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 45px;
-  border-radius: 30%;
-  color: var(--color-secundario);
-  font-weight: bold;
-  background: var(--color-primario);
+.scroll-top {
   scroll-behavior: smooth;
 }
 
 .redes-contacto a,
-.up a{
+.scroll-top a {
   color: var(--color-secundario);
   text-decoration: none;
 }
 
-.redes-mas-up i{
-  font-size: 25px;
+.container-redes-socroll-top a i {
+  font-size: 20px;
 }
 
+/* Inicio Estilos Newsletter */
+
+.newsletter {
+  background: var(--color-terciario);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  height: fit-content;
+  padding: 15px;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.newsletter h5,
+div {
+  font-family: var(--font-primary);
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  padding: 10px;
+}
+
+.newsletter div {
+  align-content: center;
+  align-items: center;
+  background-color: #000;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+.newsletter div a {
+  width: max-content;
+  font-weight: 700;
+  color: var(--color-secundario);
+  margin: 10px;
+  padding: 10px;
+}
+
+.newsletter i {
+  font-size: 20px;
+}
 
 /* Inicio Estilos footer */
 
@@ -208,29 +240,34 @@ footer {
   width: 100vw;
   flex-flow: row wrap;
   background-color: var(--color-primario);
-  height: min-content;
-  padding: 10px;
+  height: max-content;
+  padding: 25px 10px;
+  margin-top: auto;
+  
 }
 
-footer ul{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 50%;
+footer h5 {
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
   padding: 10px;
-  margin: 20px;
-  /* background-color: #98a1b1bb; */
+  letter-spacing: 10px;
 }
 
-footer ul li > a {
+.tiendas ul li a,
+.asistencia ul li a {
   display: block;
+  width: 100%;
   color: var(--color-secundario);
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.5rem;
   padding: 10px;
   letter-spacing: 10px;
-
 }
 
+footer ul a:hover {
+  border-bottom: 1px solid var(--color-secundario);
+  color: #000;
+}

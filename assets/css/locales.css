@@ -1,0 +1,103 @@
+/* ********** Custom Properties 
+********** */
+:root {
+  --bg-color: #000;
+  --color-primario: #6d3a5ade;
+  --color-secundario: #e9eff0;
+  --color-terciario: #e7f529;
+  --other-color: #ff65b5;
+  --font-primary: Avenir, system-ui, sans-serif;
+  --font-size: 16vw;
+}
+/* ********** Reset ********** */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
+/* Estilos main */
+body {
+  background-color: #e1f1f3;
+}
+
+.titulo { 
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.titulo h3{
+  font-size: x-large;
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Estilos Section */
+
+section{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.local{
+  border-top: solid;
+  border-bottom: solid;
+  padding: 30px;
+  background-color: var(--color-primario);
+}
+
+section header{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  color: var(--bg-color);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+}
+
+section footer{
+  display: block;
+  width: 100%;
+  color: var(--bg-color);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 10px;
+  letter-spacing: 10px;
+}
+
+footer p{
+  font-weight: bold;
+}
+.local a {
+  color: var(--color-secundario);
+  margin: 15px 0;
+  width: 100%;
+}
+
+.local a:hover {
+  border-bottom: 1px solid var(--color-secundario);
+  color: #000;
+}
