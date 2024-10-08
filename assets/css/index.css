@@ -7,7 +7,7 @@
   --color-terciario: #e7f529;
   --other-color: #ff65b5;
   --font-primary: Avenir, system-ui, sans-serif;
-  --font-size: 16vw;
+  --font-size: 16px;
 }
 /* ********** Reset ********** */
 * {
@@ -65,11 +65,11 @@ body {
 .nav-container ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
   align-items: baseline;
   max-width: 100%;
-  min-width: fit-content;
+  min-width: 100%;
   height: max-content;
 }
 
@@ -80,13 +80,13 @@ body {
 .nav-container li a {
   color: var(--color-secundario);
   display: flex;
-  flex-wrap: wrap;
-  width: max-content;
+  flex-wrap: nowrap;
+  width: fit-content;
   height: min-content;
   padding: 5px 10px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 20px;
   letter-spacing: 3px;
 }
 
@@ -111,7 +111,7 @@ body {
 .container-video {
   background-color: #000;
   display: flex;
-  min-width: fit-content;
+  min-width: 100%;
   max-width: fit-content;
 }
 
@@ -206,7 +206,7 @@ body {
 .newsletter h5,
 div {
   font-family: var(--font-primary);
-  font-size: 1.5vw;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
   padding: 10px;
@@ -250,8 +250,8 @@ footer h5 {
   font-family: var(--font-primary);
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.5rem;
-  padding: 10px;
+  font-size: 25px;
+  padding: 15px;
   letter-spacing: 10px;
 }
 
@@ -262,7 +262,6 @@ footer h5 {
   color: var(--color-secundario);
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1.5rem;
   padding: 10px;
   letter-spacing: 10px;
 }
