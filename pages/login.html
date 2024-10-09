@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuenta Usuario</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/img-header/img-logo.png" type="image/x-icon">
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Css -->
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <h1>Cuenta de Usuario</h1>
+    <section class="login">
+      <h1>Acceder</h1>
+      <div class="container-login">
+        <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+          <label for="user-email">Email<span>*</span></label>
+          <input type="email" name="user-email" id="user-email" required>
+    
+          <label for="password">Contraseña <span>*</span></label>
+          <input type="password" name="password" id="password" required>
+    
+          <label for="remenber-me">Recuérdame</label>
+          <input type="checkbox" name="remenber-me" id="remenber-me" checked>
+          <div><a href="#">¿Olvidaste la contraseña?</a></div>
+    
+          <button type="submit">Iniciar Sesión</button>
+          <button type="reset">Limpiar campos</button>
+        </form>
+      </div>
+    </section>
+    <section class="new-user">
+      <h1>Crear Cuenta Nuevo Usuario</h1>
+      <div class="container-create-acount">
+        <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+
+
+          <label for="fname">Nombre<span>*</span></label>
+          <input type="text" name="fname" id="fname" placeholder="Mi Nombre" required>
+
+          <label for="last-name">Apellido<span>*</span></label>
+          <input type="text" name="last-name" id="last-name" placeholder="Mi apellido" required>
+          
+          <label for="user-email">Email<span>*</span></label>
+          <input type="email" name="user-email" id="user-email" placeholder="email@email.com" required>
+
+          <label for="password">Contraseña <span>*</span></label>
+          <input type="password" name="password" id="password" required>
+
+
+          <label for="fecha-nac">Fecha de Nacimiento<span>*</span></label>
+          <input type="date" name="fecha-nac" id="fecha-nac" min="2006-01-01" required>
+          
+          <label for="terminos-condiciones">Acepto terminos y condiciones <span>*</span></label>
+          <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" required>
+          <div class="terminos-condiciones"><a href="#">Terminso y condiciones</a></div>
+    
+          <button type="submit">Crear Cuenta</button>
+          <button type="reset">Limpiar campos</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

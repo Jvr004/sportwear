@@ -1,0 +1,43 @@
+/* ********** Custom Properties 
+********** */
+:root {
+  --bg-color: #000;
+  --color-primario: #6d3a5ade;
+  --color-secundario: #e9eff0;
+  --color-terciario: #e7f529;
+  --other-color: #ff65b5;
+  --font-primary: Avenir, system-ui, sans-serif;
+  --font-size: 16px;
+}
+/* ********** Reset ********** */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+  background-color: var(--color-secundario);
+}
+
+.container-h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primario);
+  text-transform: uppercase;
+  min-width: 80%;
+  padding: 10px;
+  color: var(--color-secundario);
+}
+
+main p{
+  font-size: large;
+  font-weight: 400;
+  padding: 10px;
+  margin: 10px;
+}

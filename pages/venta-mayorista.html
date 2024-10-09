@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Venta Mayorista</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/img-header/img-logo.png" type="image/x-icon">
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Css -->
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
   <header></header>
   <main>
-    <h1>Venta Mayorista</h1>
+    <div class="container-description">
+      <h1>Venta Mayorista</h1>
+      <h2>Nos alegra saber que quieras vernder nuestros productos. Completa el formulario y nos pondremos en contacto!
+      </h2>
+    </div>
+
+    <section>
+      <h1>Acceder</h1>
+      <div class="container-login">
+        <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+          <label for="user-email">Email<span>*</span></label>
+          <input type="email" name="user-email" id="user-email">
+
+          <label for="password">Contraseña <span>*</span></label>
+          <input type="password" name="password" id="password">
+
+          <label for="remenber-me">Recuérdame</label>
+          <input type="checkbox" name="remenber-me" id="remenber-me" checked>
+          <div><a href="#">¿Olvidaste la contraseña?</a></div>
+
+          <button type="submit">Entrar</button>
+          <button type="reset">Limpiar campos</button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <h1>Crear Cuenta Como Vendedor</h1>
+      <div class="container-create-acount">
+        <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+          <label for="user-email">Email<span>*</span></label>
+          <input type="email" name="user-email" id="user-email" placeholder="email@email.com">
+
+          <label for="password">Contraseña <span>*</span></label>
+          <input type="password" name="password" id="password">
+
+          <label for="confirm-password">Confirmar Contraseña <span>*</span></label>
+          <input type="password" name="confirm-password" id="confirm-password">
+          
+          <label for="name-company">Nombre de la empresa<span>*</span></label>
+          <input type="text" name="name-company" id="name-company" placeholder="Nombre de mi empresa">
+
+          <label for="cuit-cuil">CUIT / CUIL<span>*</span></label>
+          <input type="number" name="cuit-cuil" id="cuit-cuil">
+          
+          <label for="location">Localidad<span>*</span></label>
+          <select name="location" id="location">
+            <option value="san-luis" aria-checked="true">San Luis</option>
+            <option value="cordoba">Córdoba</option>
+            <option value="buenos-aires-caba">Bueos Aires (CABA)</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar campos</button>
+        </form>
+      </div>
+    </section>
   </main>
   <footer></footer>
 </body>
+
 </html>
