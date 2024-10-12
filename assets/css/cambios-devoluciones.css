@@ -15,7 +15,6 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style-type: none;
 }
 
 html {
@@ -37,9 +36,8 @@ body {
   padding: 10px;
   margin: 10px;
   text-transform: uppercase;
+  text-align: center;
 }
-
-
 
 /* Estilos Section */
 
@@ -57,13 +55,18 @@ section{
 .cambios h2,
 .devoluciones h2{
   background-color: var(--color-primario);
+  color: var(--color-secundario);
+  text-align: center;
   width: 100%;
-}
-
-.cambios h2,
-.devoluciones h2{
   font-size: x-large;
   text-transform: uppercase;
   padding: 10px;
-  margin: 10px;
+  margin: 15px;
+}
+
+.cambios > ol li, 
+.devoluciones ol > li{
+  padding: 20px;
+  margin: 15px;
+  font-weight: 500;
 }

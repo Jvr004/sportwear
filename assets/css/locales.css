@@ -34,9 +34,12 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
 }
 
-.titulo h3{
+.titulo h1{
   font-size: x-large;
   text-transform: uppercase;
   padding: 20px;
@@ -51,12 +54,21 @@ section{
   justify-content: center;
   align-content: center;
   align-items: center;
-  gap: 25px;
-  margin: 10px;
-  padding: 10px;
+
+  min-width: 600px;
+  gap: 30px;
 }
 
-.local{
+.local-sl,
+.local-cordoba,
+.local-bs {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
   border-top: solid;
   border-bottom: solid;
   padding: 30px;
@@ -71,33 +83,45 @@ section header{
   width: 100%;
   padding: 10px;
   margin: 10px;
-  color: var(--bg-color);
+  color: var(--color-secundario);
   text-transform: uppercase;
-  font-size: 1.5rem;
   letter-spacing: 4px;
 }
 
 section footer{
   display: block;
   width: 100%;
-  color: var(--bg-color);
+  min-width: fit-content;
+  color: var(--color-secundario);
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1.5rem;
   padding: 10px;
   letter-spacing: 10px;
 }
 
-footer p{
+section footer p{
   font-weight: bold;
 }
-.local a {
-  color: var(--color-secundario);
+
+.local-sl a,
+.local-cordoba a,
+.local-bs a {
+  color: var(--bg-color);
   margin: 15px 0;
   width: 100%;
+  font-weight: 500;
+  padding: 10px;
 }
 
-.local a:hover {
+.local-sl a:hover,
+.local-cordoba a:hover,
+.local-bs a:hover {
   border-bottom: 1px solid var(--color-secundario);
   color: #000;
+}
+
+.local-sl iframe,
+.local-cordoba iframe,
+.local-bs iframe {
+max-width: 80%;
 }
