@@ -235,10 +235,10 @@ div {
 
 /* Inicio Estilos footer */
 
-footer {
+footer .footer-container {
   display: flex;
   justify-content: space-around;
-  width: 100vw;
+  /* width: 100vw; */
   flex-flow: row wrap;
   background-color: var(--color-primario);
   height: max-content;
@@ -262,7 +262,6 @@ footer h5 {
   color: var(--color-secundario);
   text-transform: uppercase;
   font-weight: 400;
-  padding: ;
   letter-spacing: 10px;
 }
 

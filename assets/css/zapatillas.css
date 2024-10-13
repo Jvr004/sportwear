@@ -7,12 +7,14 @@
   --font-size: 16px;
 }
 /* ********** Reset ********** */
-body{
-  
-}
+
 html {
   font-family: var(--font-primary);
   scroll-behavior: smooth;
+}
+
+body > main{
+  margin: 100px 20px;
 }
 
 * {

@@ -19,35 +19,45 @@
 <body>
   <header></header>
   <main>
-    <div class="container-description">
-      <h1>Venta Mayorista</h1>
-      <h2>Nos alegra saber que quieras vernder nuestros productos. Completa el formulario y nos pondremos en contacto!
-      </h2>
+      <div class="container-description">
+        <h1>Venta Mayorista</h1>
+      <p>Nos alegra saber que quieras vernder nuestros productos. 
+      </p>
+      <p>Completa el formulario y nos pondremos en contacto con vos.</p>
     </div>
-
+    <div class="container-sections">
     <section>
-      <h1>Acceder</h1>
       <div class="container-login">
+        <h1>Acceder</h1>
         <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+          
           <label for="user-email">Email<span>*</span></label>
           <input type="email" name="user-email" id="user-email">
-
+          
           <label for="password">Contraseña <span>*</span></label>
           <input type="password" name="password" id="password">
+          
+          <div class="container-remember-reset-pass">
+            <div class="remember-me">
+              <label for="remenber-me">Recuérdame</label>
+              <input type="checkbox" name="remenber-me" id="remenber-me" checked>
+            </div>
+            
+            <div><a href="#">¿Olvidaste la contraseña?</a></div>
+          </div>
+            <div class="btn-container">
 
-          <label for="remenber-me">Recuérdame</label>
-          <input type="checkbox" name="remenber-me" id="remenber-me" checked>
-          <div><a href="#">¿Olvidaste la contraseña?</a></div>
-
-          <button type="submit">Entrar</button>
-          <button type="reset">Limpiar campos</button>
-        </form>
+              <button class="btn btn-submit" type="submit">Entrar</button>
+              <button class="btn btn-reset" type="reset">Limpiar campos</button>
+            </div>
+            </form>
       </div>
     </section>
     <section>
-      <h1>Crear Cuenta Como Vendedor</h1>
       <div class="container-create-acount">
+        <h1>Crear Cuenta Como Vendedor</h1>
         <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+
           <label for="user-email">Email<span>*</span></label>
           <input type="email" name="user-email" id="user-email" placeholder="email@email.com">
 
@@ -69,14 +79,15 @@
             <option value="cordoba">Córdoba</option>
             <option value="buenos-aires-caba">Bueos Aires (CABA)</option>
           </select>
-
+          
           <button type="submit">Enviar</button>
           <button type="reset">Limpiar campos</button>
         </form>
       </div>
     </section>
+  </div>
   </main>
   <footer></footer>
+<script src="../assets/js/header-footer.js"></script>
 </body>
-
 </html>

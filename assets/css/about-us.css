@@ -18,6 +18,10 @@
   list-style-type: none;
 }
 
+main{
+  margin: 70px 50px;
+}
+
 html {
   font-family: var(--font-primary);
   scroll-behavior: smooth;

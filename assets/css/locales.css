@@ -28,6 +28,10 @@ body {
   background-color: #e1f1f3;
 }
 
+body > main{
+  margin: 100px 20px;
+}
+
 .titulo { 
   display: flex;
   flex-flow: column wrap;
