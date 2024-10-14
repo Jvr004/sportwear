@@ -10,8 +10,8 @@ header.innerHTML = `
       <div class="nav-links">
         <ul>
           <li><a href="/index.html">Inicio</a></li>
-          <li><a href="../pages/about-us.html">Sobre Nosotros</a></li>
-          <li><a href="../pages/remeras-camisetas.html">Remeras y Camisetas</a></li>
+          <li><a href="/pages/about-us.html">Sobre Nosotros</a></li>
+          <li><a href="/pages/remeras-camisetas.html">Remeras y Camisetas</a></li>
           <li><a href="../pages/zapatillas.html">Zapatillas</a></li>
           <li><a href="../pages/pantalones.html">Pantalones</a></li>
         </ul>
