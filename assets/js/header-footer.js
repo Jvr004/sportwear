@@ -5,7 +5,7 @@ const footer = document.querySelector("footer");
 header.innerHTML = `
     <nav class="nav-container">
       <div class="logo">
-        // <a href="/index.html"><img src="/assets/img/img-header/Logo.gif" alt="gif logo"></a>
+        
         <a href="/index.html"><img src="../img/img-header/Logo.gif" alt="gif logo"></a>
       </div>
       <div class="nav-links">
