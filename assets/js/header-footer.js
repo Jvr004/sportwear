@@ -6,7 +6,7 @@ header.innerHTML = `
     <nav class="nav-container">
       <div class="logo">
         
-        <a href="index.html"><img src="/assets/img/img-header/Logo.gif" alt="gif logo"></a>
+        <a href="index.html"><img src="../img/img-header/Logo.gif" alt="gif logo"></a>
       </div>
       <div class="nav-links">
         <ul>
@@ -41,8 +41,7 @@ footer.innerHTML = `
         <li><a href="cambios-y-devoluciones.html">Cambios y Devoluciones</a></li>
         <li><a href="guia-talles.html">Guía de Talles</a></li>
         <li><a href="venta-mayorista.html">Venta Mayorista</a></li>
-        <li><a href="/formulario-contacto.html">Venta Mayorista</a></li>
-        <li><a href="formulario-contacto.html>Contacto</a></li>
+        <li><a href="formulario-contacto.html">Venta Mayorista</a></li>
       </ul>
     </div>
   </div>`;
