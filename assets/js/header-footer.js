@@ -5,12 +5,13 @@ const footer = document.querySelector("footer");
 header.innerHTML = `
     <nav class="nav-container">
       <div class="logo">
-        <a href="/index.html"><img src="../assets/img/img-header/Logo.gif" alt="gif logo"></a>
+        // <a href="/index.html"><img src="/assets/img/img-header/Logo.gif" alt="gif logo"></a>
+        <a href="/index.html"><img src="../img/img-header/Logo.gif" alt="gif logo"></a>
       </div>
       <div class="nav-links">
         <ul>
           <li><a href="/index.html">Inicio</a></li>
-          <li><a href="/about-us.html">Sobre Nosotros</a></li>
+          <li><a href="about-us.html">Sobre Nosotros</a></li>
           <li><a href="/remeras-camisetas.html">Remeras y Camisetas</a></li>
           <li><a href="/zapatillas.html">Zapatillas</a></li>
           <li><a href="/pantalones.html">Pantalones</a></li>
