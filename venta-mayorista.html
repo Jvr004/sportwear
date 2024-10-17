@@ -23,69 +23,72 @@
         <h1>Venta Mayorista</h1>
       <p>Nos alegra saber que quieras vernder nuestros productos. 
       </p>
-      <p>Completa el formulario y nos pondremos en contacto con vos.</p>
+      <p>Si ya tenes cuenta, solo ingresa como siempre.</p> 
+        
+        <p>Si no tenes cuenta aun completa el formulario y nos pondremos en contacto con vos.</p>
     </div>
-    <div class="container-sections">
-    <section>
-      <div class="container-login">
-        <h1>Acceder</h1>
-        <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
-          
-          <label for="user-email">Email<span>*</span></label>
-          <input type="email" name="user-email" id="user-email">
-          
-          <label for="password">Contraseña <span>*</span></label>
-          <input type="password" name="password" id="password">
-          
-          <div class="container-remember-reset-pass">
-            <div class="remember-me">
+    <div class="section-containers">
+    
+      <!-- Seccion Login -->
+      <section class="login">
+        <h2>Acceder</h2>
+        <div class="container-login">
+          <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+            <label for="user-email">Email<span>*</span></label>
+            <input type="email" name="user-email" id="user-email" required>
+    
+            <label for="password">Contraseña <span>*</span></label>
+            <input type="password" name="password" id="password" required>
+    
+            <div class="container-recuerdame">
+    
               <label for="remenber-me">Recuérdame</label>
               <input type="checkbox" name="remenber-me" id="remenber-me" checked>
+              <span><a href="recuperar-password.html">¿Olvidaste la contraseña?</a></span>
+    
             </div>
-            
-            <div><a href="#">¿Olvidaste la contraseña?</a></div>
-          </div>
-            <div class="btn-container">
-
-              <button class="btn btn-submit" type="submit">Entrar</button>
-              <button class="btn btn-reset" type="reset">Limpiar campos</button>
+    
+            <button type="submit">Iniciar Sesión</button>
+          </form>
+        </div>
+      </section>
+      <!-- Seccion Nuevo Usuarios -->
+      <section class="new-user">
+        <h2>Crear Cuenta Nuevo Usuario</h2>
+        <div class="container-create-acount">
+          <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+    
+    
+            <label for="fname">Nombre<span>*</span></label>
+            <input type="text" name="fname" id="fname" placeholder="Mi Nombre" required>
+    
+            <label for="last-name">Apellido<span>*</span></label>
+            <input type="text" name="last-name" id="last-name" placeholder="Mi apellido" required>
+    
+            <label for="user-email">Email<span>*</span></label>
+            <input type="email" name="user-email" id="user-email" placeholder="email@email.com" required>
+    
+            <label for="password">Contraseña <span>*</span></label>
+            <input type="password" name="password" id="password" required>
+    
+    
+            <label for="fecha-nac">Fecha de Nacimiento<span>*</span></label>
+            <input type="date" name="fecha-nac" id="fecha-nac" min="2006-01-01" required>
+    
+            <div class="container-term-condiciones">
+    
+              <label for="terminos-condiciones">Acepto terminos y condiciones <span>*</span></label>
+              <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" required>
+              <div class="terminos-condiciones"><a href="#">Terminso y condiciones</a></div>
+    
             </div>
-            </form>
-      </div>
-    </section>
-    <section>
-      <div class="container-create-acount">
-        <h1>Crear Cuenta Como Vendedor</h1>
-        <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
-
-          <label for="user-email">Email<span>*</span></label>
-          <input type="email" name="user-email" id="user-email" placeholder="email@email.com">
-
-          <label for="password">Contraseña <span>*</span></label>
-          <input type="password" name="password" id="password">
-
-          <label for="confirm-password">Confirmar Contraseña <span>*</span></label>
-          <input type="password" name="confirm-password" id="confirm-password">
-          
-          <label for="name-company">Nombre de la empresa<span>*</span></label>
-          <input type="text" name="name-company" id="name-company" placeholder="Nombre de mi empresa">
-
-          <label for="cuit-cuil">CUIT / CUIL<span>*</span></label>
-          <input type="number" name="cuit-cuil" id="cuit-cuil">
-          
-          <label for="location">Localidad<span>*</span></label>
-          <select name="location" id="location">
-            <option value="san-luis" aria-checked="true">San Luis</option>
-            <option value="cordoba">Córdoba</option>
-            <option value="buenos-aires-caba">Bueos Aires (CABA)</option>
-          </select>
-          
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpiar campos</button>
-        </form>
-      </div>
-    </section>
-  </div>
+    
+            <button type="submit">Crear Cuenta</button>
+            <button type="reset">Limpiar campos</button>
+          </form>
+        </div>
+      </section>
+    </div>
   </main>
   <footer></footer>
 <script src="assets/js/header-footer.js"></script>

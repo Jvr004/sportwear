@@ -27,7 +27,6 @@ header.innerHTML = `
 
 footer.innerHTML = `
 <div class="footer-container">
-
       <div class="tiendas">
         <h5>Locales</h5>
         <ul>
@@ -41,7 +40,7 @@ footer.innerHTML = `
         <li><a href="cambios-y-devoluciones.html">Cambios y Devoluciones</a></li>
         <li><a href="guia-talles.html">Guía de Talles</a></li>
         <li><a href="venta-mayorista.html">Venta Mayorista</a></li>
-        <li><a href="/formulario-contacto.html">Contacto</a></li>
+        <li><a href="formulario-contacto.html">Contacto</a></li>
       </ul>
     </div>
   </div>`;

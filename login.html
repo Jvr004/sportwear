@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,69 +8,84 @@
   <link rel="shortcut icon" href="assets/img/img-header/img-logo.png" type="image/x-icon">
   <!-- Font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Css -->
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/login.css">
   <title>Cuenta Usuario</title>
 </head>
+
 <body>
   <header></header>
   <main>
     <h1>Cuenta de Usuario</h1>
-    <section class="login">
-      <h1>Acceder</h1>
-      <div class="container-login">
-        <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
-          <label for="user-email">Email<span>*</span></label>
-          <input type="email" name="user-email" id="user-email" required>
-    
-          <label for="password">Contraseña <span>*</span></label>
-          <input type="password" name="password" id="password" required>
-    
-          <label for="remenber-me">Recuérdame</label>
-          <input type="checkbox" name="remenber-me" id="remenber-me" checked>
-          <div><a href="recuperar-password.html">¿Olvidaste la contraseña?</a></div>
-    
-          <button type="submit">Iniciar Sesión</button>
-          <button type="reset">Limpiar campos</button>
-        </form>
-      </div>
-    </section>
-    <section class="new-user">
-      <h1>Crear Cuenta Nuevo Usuario</h1>
-      <div class="container-create-acount">
-        <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+
+    <div class="section-containers">
+
+      <!-- Seccion Login -->
+      <section class="login">
+        <h2>Acceder</h2>
+        <div class="container-login">
+          <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+            <label for="user-email">Email<span>*</span></label>
+            <input type="email" name="user-email" id="user-email" required>
+
+            <label for="password">Contraseña <span>*</span></label>
+            <input type="password" name="password" id="password" required>
+
+            <div class="container-recuerdame">
+
+              <label for="remenber-me">Recuérdame</label>
+              <input type="checkbox" name="remenber-me" id="remenber-me" checked>
+              <span><a href="recuperar-password.html">¿Olvidaste la contraseña?</a></span>
+
+            </div>
+
+            <button type="submit">Iniciar Sesión</button>
+          </form>
+        </div>
+      </section>
+      <!-- Seccion Nuevo Usuarios -->
+      <section class="new-user">
+        <h2>Crear Cuenta Nuevo Usuario</h2>
+        <div class="container-create-acount">
+          <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
 
 
-          <label for="fname">Nombre<span>*</span></label>
-          <input type="text" name="fname" id="fname" placeholder="Mi Nombre" required>
+            <label for="fname">Nombre<span>*</span></label>
+            <input type="text" name="fname" id="fname" placeholder="Mi Nombre" required>
 
-          <label for="last-name">Apellido<span>*</span></label>
-          <input type="text" name="last-name" id="last-name" placeholder="Mi apellido" required>
-          
-          <label for="user-email">Email<span>*</span></label>
-          <input type="email" name="user-email" id="user-email" placeholder="email@email.com" required>
+            <label for="last-name">Apellido<span>*</span></label>
+            <input type="text" name="last-name" id="last-name" placeholder="Mi apellido" required>
 
-          <label for="password">Contraseña <span>*</span></label>
-          <input type="password" name="password" id="password" required>
+            <label for="user-email">Email<span>*</span></label>
+            <input type="email" name="user-email" id="user-email" placeholder="email@email.com" required>
+
+            <label for="password">Contraseña <span>*</span></label>
+            <input type="password" name="password" id="password" required>
 
 
-          <label for="fecha-nac">Fecha de Nacimiento<span>*</span></label>
-          <input type="date" name="fecha-nac" id="fecha-nac" min="2006-01-01" required>
-          
-          <label for="terminos-condiciones">Acepto terminos y condiciones <span>*</span></label>
-          <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" required>
-          <div class="terminos-condiciones"><a href="#">Terminso y condiciones</a></div>
-    
-          <button type="submit">Crear Cuenta</button>
-          <button type="reset">Limpiar campos</button>
-        </form>
-      </div>
-    </section>
+            <label for="fecha-nac">Fecha de Nacimiento<span>*</span></label>
+            <input type="date" name="fecha-nac" id="fecha-nac" min="2006-01-01" required>
+
+            <div class="container-term-condiciones">
+
+              <label for="terminos-condiciones">Acepto terminos y condiciones <span>*</span></label>
+              <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" required>
+              <div class="terminos-condiciones"><a href="#">Terminso y condiciones</a></div>
+
+            </div>
+              
+              <button type="submit">Crear Cuenta</button>
+            <button type="reset">Limpiar campos</button>
+          </form>
+        </div>
+      </section>
+    </div>
   </main>
   <footer></footer>
   <script src="assets/js/header-footer.js"></script>
 </body>
+
 </html>

@@ -1,3 +1,86 @@
-main{
-  margin: 100px 20px;
+/* ********** Custom Properties 
+********** */
+:root {
+  --bg-color: #000;
+  --color-primario: #6d3a5ade;
+  --color-secundario: #e9eff0;
+  --color-terciario: #e7f529;
+  --other-color: #ff65b5;
+  --font-primary: Avenir, system-ui, sans-serif;
+  --font-size: 16px;
 }
+/* ********** Reset ********** */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
+
+main{
+  margin: 50px 20px;
+}
+
+h1, 
+h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-containers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-width: 200px;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+section{
+  background-color: var(--color-primario);
+  margin: 30px;
+  padding: 20px;
+}
+
+form{
+  background-color: var(--color-secundario);
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 15px;
+  padding: 15px;
+  gap: 15px;
+  font-weight: 500;
+}
+
+span{
+  color: red;
+  font-weight: bolder;
+}
+
+.container-recuerdame,
+.container-term-condiciones {
+  font-size: small;
+}
+
+form button{
+  border: none;
+  height: 30px;
+  text-align: center;
+  text-transform:uppercase;
+  font-weight: bold;
+  color: #000;
+  background-color: lightblue;
+}
+
+form button:hover{
+  background-color: lightskyblue;
+} 

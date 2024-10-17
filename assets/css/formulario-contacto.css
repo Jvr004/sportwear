@@ -1,3 +1,92 @@
-main{
-  margin: 100px 20px;
+/* ********** Custom Properties 
+********** */
+:root {
+  --bg-color: #000;
+  --color-primario: #6d3a5ade;
+  --color-secundario: #e9eff0;
+  --color-terciario: #e7f529;
+  --other-color: #ff65b5;
+  --font-primary: Avenir, system-ui, sans-serif;
+  --font-size: 16px;
 }
+/* ********** Reset ********** */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
+main{
+  margin: 50px 20px;
+}
+
+.description-container h1{
+  padding: 10px;
+  margin: 10px;
+}
+
+.description-container{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+}
+
+section{
+  background-color: var(--color-primario);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 200px;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+form,
+fieldset{
+  background-color: var(--color-secundario);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  min-width: 200xp;
+  max-width: 100%;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+  font-weight: 500;
+}
+
+span{
+  color: red;
+  font-weight: bolder;
+}
+
+.mas-info {
+  font-size: small;
+}
+
+form button{
+  border: none;
+  height: 30px;
+  text-align: center;
+  text-transform:uppercase;
+  font-weight: bold;
+  color: #000;
+  background-color: lightblue;
+}
+
+form button:hover{
+  background-color: lightskyblue;
+} 

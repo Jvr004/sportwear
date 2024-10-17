@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +8,63 @@
   <link rel="shortcut icon" href="assets/img/img-header/img-logo.png" type="image/x-icon">
   <!-- Font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Css -->
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/formulario-contacto.css">
   <title>Contacto</title>
 </head>
+
 <body>
   <header></header>
   <main>
 
-    <div class="contactanos">
-      <span class="uppercase">Contactanos</span>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum rerum eveniet porro, blanditiis rem quas magni itaque tenetur cum aspernatur eius ullam, pariatur laudantium! Dignissimos veniam labore magni, quasi odio vero ipsa sit est et!</p>
-      
-      <div class="whatsapp">
-        <span class="uppercase">whatsapp</span>
-        <a href="https://web.whatsapp.com/" >2664-111111</a>
-      </div>
-      <div class="email">
-        <span class="uppercase">email</span>
-        <a href="mailto:ventas@sportwear.com">ventas@sportwear.com</a>
-      </div>
+    <div class="description-container">
+      <h1>formulario de contacto</h1>
+      <p>LLenalo y nosotros de contactamos. Si dejas tu comentraio mejor, así te asesoramos mas rapido.</p>
     </div>
-    <br>
-  <form action="">
-    <fieldset>
-      <legend>Datos de contacto</legend>
-      <label for="nombre" placeholder="Ej:Maria Perez ">Nombre: </label>
-      <br>
-      <input type="text" id="nombre" name="nombre" placeholder="ej: María" pattern="^[A-Za-z]+$" title="Este campo solp acepta letras" autofocus required>
-      <br>
-      <label for="apellido">Apellido: </label>
-      <br> 
-    <input type="text" id="apellido" name="apellido" placeholder="ej: Perez" pattern="^[A-Za-z]+$" title="Este campo solp acepta letras" required>
-    <br>
-    <label for="email">Email: </label>
-    <br>
-    <input type="email" id="email" name="email" placeholder="ej: tuemail@email.com" required>
-    <br>
-    <label for="tel">Teléfono: </label>
-    <br>
-    <input type="tel" id="tel" name="tel" placeholder="ej: 2664111111" size="13" required>
-    <br>
-    <label for="mensaje">Mensaje: </label>
-    <br>
-    <textarea name="mensaje" id="mensaje" rows="10" cols="30" placeholder="ej: Tu mensaje"></textarea>
-    <br>
-    <button>Enviar</button>
-    <input type="reset" value="Restablecer">
-    <br>
-    <label for="mas-info">Haga clic a continuacion si desea recibir más informacion </label>
-    <input type="checkbox" name="mas-info" id="mas-info" checked>
-  </fieldset>
-</form>
-</main>
-<footer></footer>
-<script src="assets/js/header-footer.js"></script>
+    <section>
+
+      <div class="form-container">
+
+        <form action="">
+          <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="nombre" placeholder="Ej:Maria Perez ">Nombre: <span>*</span> </label>
+            <br>
+            <input type="text" id="nombre" name="nombre" placeholder="ej: María" pattern="^[A-Za-z]+$"
+              title="Este campo solp acepta letras" autofocus required>
+            <br>
+            <label for="apellido">Apellido: <span>*</span> </label>
+            <br>
+            <input type="text" id="apellido" name="apellido" placeholder="ej: Perez" pattern="^[A-Za-z]+$"
+              title="Este campo solp acepta letras" required>
+            <br>
+            <label for="email">Email: <span>*</span> </label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="ej: tuemail@email.com" required>
+            <br>
+            <label for="tel">Teléfono: <span>*</span> </label>
+            <br>
+            <input type="tel" id="tel" name="tel" placeholder="ej: 2664111111" size="13" required>
+            <br>
+            <label for="mensaje">Mensaje: </label>
+            <br>
+            <textarea name="mensaje" id="mensaje" rows="10" cols="30" placeholder="ej: Tu mensaje"></textarea>
+
+            <div class="mas-info">
+              <label for="mas-info">Tildá si quieres recibir más información </label>
+              <input type="checkbox" name="mas-info" id="mas-info" checked>
+            </div>
+            <button>Enviar</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="assets/js/header-footer.js"></script>
 </body>
+
 </html>
