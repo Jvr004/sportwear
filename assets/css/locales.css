@@ -1,13 +1,14 @@
 /* ********** Custom Properties 
 ********** */
 :root {
+  --bg-color-primary: #f7feff;
   --bg-color: #000;
-  --color-primario: #6d3a5ade;
-  --color-secundario: #e9eff0;
+  --color-primario: #623251;
+  --color-secundario: #734062;
   --color-terciario: #e7f529;
   --other-color: #ff65b5;
   --font-primary: Avenir, system-ui, sans-serif;
-  --font-size: 16vw;
+  --font-size: 16px;
 }
 /* ********** Reset ********** */
 * {
@@ -18,19 +19,16 @@
   list-style-type: none;
 }
 
+main{
+  margin: 40px 50px;
+}
+
 html {
   font-family: var(--font-primary);
   scroll-behavior: smooth;
+  background-color: var(--bg-color-primary);
 }
 
-/* Estilos main */
-body {
-  background-color: #e1f1f3;
-}
-
-body > main{
-  margin: 100px 20px;
-}
 
 .titulo { 
   display: flex;
@@ -46,8 +44,6 @@ body > main{
 .titulo h1{
   font-size: x-large;
   text-transform: uppercase;
-  padding: 20px;
-  margin: 20px;
 }
 
 /* Estilos Section */
@@ -58,7 +54,7 @@ section{
   justify-content: center;
   align-content: center;
   align-items: center;
-
+  color: var(--bg-color-primary);
   min-width: 600px;
   gap: 30px;
 }
@@ -87,7 +83,7 @@ section header{
   width: 100%;
   padding: 10px;
   margin: 10px;
-  color: var(--color-secundario);
+  color: var(--bg-color-primary);
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -96,7 +92,7 @@ section footer{
   display: block;
   width: 100%;
   min-width: fit-content;
-  color: var(--color-secundario);
+  color: var(--bg-color-primary);
   text-transform: uppercase;
   font-weight: 400;
   padding: 10px;
@@ -105,12 +101,13 @@ section footer{
 
 section footer p{
   font-weight: bold;
+  color: var(--bg-color-primary);
 }
 
 .local-sl a,
 .local-cordoba a,
 .local-bs a {
-  color: var(--bg-color);
+  color: var(--bg-color-primary);
   margin: 15px 0;
   width: 100%;
   font-weight: 500;
@@ -120,7 +117,7 @@ section footer p{
 .local-sl a:hover,
 .local-cordoba a:hover,
 .local-bs a:hover {
-  border-bottom: 1px solid var(--color-secundario);
+  border-bottom: 1px solid var(--bg-color-primary);
   color: #000;
 }
 

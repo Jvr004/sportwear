@@ -1,21 +1,16 @@
 /* ********** Custom Properties 
 ********** */
 :root {
-  --color-primario: #6d3a5a;
-  --color-secundario: #e1f1f3;
+  --bg-color-primary: #f7feff;
+  --bg-color: #000;
+  --color-primario: #623251;
+  --color-secundario: #734062;
+  --color-terciario: #e7f529;
+  --other-color: #ff65b5;
   --font-primary: Avenir, system-ui, sans-serif;
   --font-size: 16px;
 }
 /* ********** Reset ********** */
-main{
-  margin: 100px 20px;
-}
-
-html {
-  font-family: var(--font-primary);
-  scroll-behavior: smooth;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -23,9 +18,16 @@ html {
   text-decoration: none;
   list-style-type: none;
 }
-/* ********** Components ********** */
-/* ********** Utilities ********** */
-/* ********** Site Styles ********** */
+
+main{
+  margin: 40px 50px;
+}
+
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+  background-color: var(--bg-color-primary);
+}
 
 .description-talla{
   width: 100%;
@@ -37,11 +39,11 @@ html {
 }
 
 section h2{
+  margin: 40px;
+  background-color: var(--color-primario);
+  color: var(--bg-color-primary);
   text-align: center;
 padding: 10px;
-margin: 40px;
-background-color: var(--color-primario);
-color: var(--color-secundario);
 text-transform: uppercase;
 }
 
@@ -91,5 +93,5 @@ tr:nth-child(even){
 
 tr:hover{
   background-color: #000;
-  color: var(--color-secundario);
+  color: var(--bg-color-primary);
 }

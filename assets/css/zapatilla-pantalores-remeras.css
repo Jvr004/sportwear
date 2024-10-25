@@ -1,0 +1,123 @@
+/* ********** Custom Properties 
+********** */
+:root {
+  --bg-color-primary: #f7feff;
+  --bg-color: #000;
+  --color-primario: #623251;
+  --color-secundario: #734062;
+  --color-terciario: #e7f529;
+  --other-color: #ff65b5;
+  --font-primary: Avenir, system-ui, sans-serif;
+  --font-size: 16px;
+}
+/* ********** Reset ********** */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+main{
+  margin: 40px 50px;
+}
+
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+  background-color: var(--bg-color-primary);
+}
+
+
+/* Estilos header */
+/* Estillos zapatillas */
+
+.description-general{
+  padding: 30px;
+}
+
+.description-general h1{
+  text-align: center;
+  margin: 10px;
+}
+
+.container-productos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.product-card{
+  min-width: 150px;
+  max-width: 350px;
+  width: 100%;
+  height: 550px;
+  border-radius: 10px 10px 5px 5px ;
+  border: 2px solid var(--color-primario);
+  margin: 5px;
+  padding: 5px;
+}
+
+.product-card:hover{
+  box-shadow: 10px 10px 10px 1px rgba(115, 64, 98, 02)
+}
+
+.product-card .img-principal{
+  min-width: 100px;
+  max-width: 400px;
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  transition: 0.5s;
+  border-radius: 5px 5px 0 0;
+}
+
+.product-card .img-principal:hover{
+  transform: scale(1.1);
+}
+
+.product-card .description-container{
+  width: 100%;
+}
+
+.description-container .agregar-carrito{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: var(--color-primario);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.description-container .agregar-carrito a{
+  font-size: small;
+  color: var(--bg-color-primary);
+  text-align: center;
+}
+
+.product-card .producto-miniatura{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 140px;
+  gap: 5px;
+}
+
+.product-card .producto-miniatura > img{
+  min-width: 100px;
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+  object-fit: contain;
+}
+
+.producto-miniatura > img:hover{
+  transform: scale(1.2);
+}

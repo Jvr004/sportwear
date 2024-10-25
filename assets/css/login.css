@@ -1,9 +1,10 @@
 /* ********** Custom Properties 
 ********** */
 :root {
+  --bg-color-primary: #f7feff;
   --bg-color: #000;
-  --color-primario: #6d3a5ade;
-  --color-secundario: #e9eff0;
+  --color-primario: #623251;
+  --color-secundario: #734062;
   --color-terciario: #e7f529;
   --other-color: #ff65b5;
   --font-primary: Avenir, system-ui, sans-serif;
@@ -18,14 +19,14 @@
   list-style-type: none;
 }
 
+main{
+  margin: 40px 50px;
+}
+
 html {
   font-family: var(--font-primary);
   scroll-behavior: smooth;
-}
-
-
-main{
-  margin: 50px 20px;
+  background-color: var(--bg-color-primary);
 }
 
 h1, 
@@ -45,6 +46,11 @@ h2{
   padding: 10px;
 }
 
+section h2{
+  color: var(--bg-color-primary);
+}
+
+
 section{
   background-color: var(--color-primario);
   margin: 30px;
@@ -52,7 +58,7 @@ section{
 }
 
 form{
-  background-color: var(--color-secundario);
+  background-color: var(--bg-color-primary);
   display: flex;
   flex-flow: column nowrap;
   margin: 15px;
@@ -68,7 +74,11 @@ span{
 
 .container-recuerdame,
 .container-term-condiciones {
-  font-size: small;
+  font-size:14px;
+}
+
+form input{
+  height: 35px;
 }
 
 form button{

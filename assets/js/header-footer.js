@@ -2,12 +2,15 @@ const header = document.querySelector("header");
 
 const footer = document.querySelector("footer");
 
+//Insertando Header y footer dinamico
+
 header.innerHTML = `
     <nav class="nav-container">
-      <div class="logo">
-        
-        <a href="index.html"><img src="../img/img-header/Logo.gif" alt="gif logo"></a>
+      
+    <div class="logo">
+        <a href="index.html"><img src="/assets/img/img-header/Logo.gif"></a>
       </div>
+
       <div class="nav-links">
         <ul>
           <li><a href="index.html">Inicio</a></li>

@@ -1,9 +1,10 @@
 /* ********** Custom Properties 
 ********** */
 :root {
+  --bg-color-primary: #f7feff;
   --bg-color: #000;
-  --color-primario: #6d3a5ade;
-  --color-secundario: #e9eff0;
+  --color-primario: #623251;
+  --color-secundario: #734062;
   --color-terciario: #e7f529;
   --other-color: #ff65b5;
   --font-primary: Avenir, system-ui, sans-serif;
@@ -18,9 +19,14 @@
   list-style-type: none;
 }
 
+main{
+  margin: 40px 50px;
+}
+
 html {
   font-family: var(--font-primary);
   scroll-behavior: smooth;
+  background-color: var(--bg-color-primary);
 }
 
 
@@ -28,12 +34,14 @@ html {
 
 header {
   background: var(--color-primario);
+  justify-content: center;
+  align-content: center;
   width: 100%;
 }
 
 /* Estilos main */
 body {
-  background-color: #e1f1f3;
+  background-color: var(--bg-color-primary);
 }
 
 /* Estilos nav */
@@ -68,9 +76,9 @@ body {
   justify-content: center;
   align-content: center;
   align-items: baseline;
+  min-width: 200px;
   max-width: 100%;
-  min-width: 100%;
-  height: max-content;
+  width: 100%;
 }
 
 .nav-container ul li {
@@ -78,20 +86,19 @@ body {
 }
 
 .nav-container li a {
-  color: var(--color-secundario);
+  color: var(--bg-color-primary);
   display: flex;
   flex-wrap: nowrap;
   width: fit-content;
   height: min-content;
   padding: 5px 10px;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: bold;
   letter-spacing: 3px;
 }
 
 .nav-links li a:hover {
-  border-bottom: 1px solid var(--color-secundario);
+  border-bottom: 1px solid var(--bg-color-primary);
   color: #000;
 }
 
@@ -103,7 +110,7 @@ body {
 
 .access-login li a:hover {
   color: var(--bg-color);
-  font-size: 45px;
+  font-size: 30px;
 }
 
 /* Estilos video */
@@ -121,7 +128,7 @@ body {
   margin: 5px 5px;
 }
 
-/* Estilos carrousel */
+/* ------------------------------Estilos carrousel */
 
 .container-carrousel {
   background-color: #000;
@@ -162,7 +169,7 @@ body {
 
 .redes-contacto,
 .scroll-top {
-  color: var(--color-secundario);
+  color: var(--bg-color-primary);
   background: var(--color-primario);
   display: flex;
   flex-flow: column;
@@ -181,7 +188,7 @@ body {
 
 .redes-contacto a,
 .scroll-top a {
-  color: var(--color-secundario);
+  color: var(--bg-color-primary);
   text-decoration: none;
 }
 
@@ -224,7 +231,7 @@ div {
 .newsletter div a {
   width: max-content;
   font-weight: 700;
-  color: var(--color-secundario);
+  color: var(--bg-color-primary);
   margin: 10px;
   padding: 10px;
 }
@@ -235,37 +242,38 @@ div {
 
 /* Inicio Estilos footer */
 
+
 footer .footer-container {
   display: flex;
-  justify-content: space-around;
-  /* width: 100vw; */
   flex-flow: row wrap;
+  justify-content: space-evenly;
   background-color: var(--color-primario);
   height: max-content;
   padding: 25px 10px;
   margin-top: auto;
+  position: absolute;
+  margin-bottom: 0;
+  width: 100%;
 }
 
-footer h5 {
+footer h2 {
   font-family: var(--font-primary);
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 25px;
   padding: 5px 0;
-  letter-spacing: 10px;
+  text-align: center;
 }
 
 .tiendas ul li a,
 .asistencia ul li a {
-  display: block;
-  width: 100%;
-  color: var(--color-secundario);
+  color: var(--bg-color-primary);
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 10px;
+  padding: 5px;
+  font-size: small;
 }
 
 footer ul a:hover {
-  border-bottom: 1px solid var(--color-secundario);
+  border-bottom: 1px solid var(--bg-color-primary);
   color: #000;
 }

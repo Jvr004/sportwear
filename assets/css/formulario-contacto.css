@@ -1,9 +1,10 @@
 /* ********** Custom Properties 
 ********** */
 :root {
+  --bg-color-primary: #f7feff;
   --bg-color: #000;
-  --color-primario: #6d3a5ade;
-  --color-secundario: #e9eff0;
+  --color-primario: #623251;
+  --color-secundario: #734062;
   --color-terciario: #e7f529;
   --other-color: #ff65b5;
   --font-primary: Avenir, system-ui, sans-serif;
@@ -18,14 +19,16 @@
   list-style-type: none;
 }
 
+main{
+  margin: 40px 50px;
+}
+
 html {
   font-family: var(--font-primary);
   scroll-behavior: smooth;
+  background-color: var(--bg-color-primary);
 }
 
-main{
-  margin: 50px 20px;
-}
 
 .description-container h1{
   padding: 10px;
@@ -41,7 +44,6 @@ main{
 }
 
 section{
-  background-color: var(--color-primario);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -56,7 +58,8 @@ section{
 
 form,
 fieldset{
-  background-color: var(--color-secundario);
+  background-color: var(--color-primario);
+  color: var(--bg-color-primary);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -64,9 +67,14 @@ fieldset{
   max-width: 100%;
   margin: 10px;
   padding: 10px;
-  gap: 10px;
+  gap: 2px;
   font-weight: 500;
 }
+
+form input{
+  height: 35px;
+}
+
 
 span{
   color: red;
@@ -75,6 +83,10 @@ span{
 
 .mas-info {
   font-size: small;
+}
+
+textarea{
+  resize: none;
 }
 
 form button{
