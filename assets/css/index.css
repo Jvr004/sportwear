@@ -76,13 +76,13 @@ body {
   justify-content: center;
   align-content: center;
   align-items: baseline;
-  min-width: 200px;
+  
   max-width: 100%;
   width: 100%;
 }
 
 .nav-container ul li {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .nav-container li a {
@@ -94,7 +94,6 @@ body {
   padding: 5px 10px;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 3px;
 }
 
 .nav-links li a:hover {
@@ -104,7 +103,7 @@ body {
 
 
 .acces-login li a i {
-  font-size: 40px;
+  font-size: 35px;
   color: var(--color-terciario);
 }
 
@@ -133,12 +132,10 @@ body {
 .container-carrousel {
   background-color: #000;
   display: flex;
-  flex-grow: 1;
-}
-
-.slider {
-  display: flex;
-  overflow-x: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .container-carrousel img {
@@ -151,9 +148,35 @@ body {
     transparent
   ); /*avitar que se vea el recorte de la imagen*/
   object-fit: cover; /*Recorta la imagen sin perder calidad*/
-  /*border-radius: 5px;
-  scroll-snap-align: center;*/
 }
+
+.btn-left i,
+.btn-right i{
+  font-size: 25px;
+  color:var(--bg-color-primary);
+  position: absolute; 
+  bottom: 50%;
+  z-index: 999;
+  cursor: pointer;
+
+}
+
+.btn-left i{
+  left: 5px; 
+
+}
+
+.btn-right i{
+  right: 5px;
+}
+
+
+
+
+
+
+
+
 
 /* Estilos para redes y up */
 
