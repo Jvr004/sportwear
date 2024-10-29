@@ -1,28 +1,29 @@
-const imgCarr = document.getElementById("imgCarrousel");
 const btnLeft = document.getElementById("btnLeft");
 const btnRight = document.getElementById("btnRight");
+const imgCarr = document.getElementById("imgCarrousel");
 
-var indice = 0;
+let indice = 0;
 
 const imgs = [
-  `../img/img-carousel/camiseta-seleccion.png"`,
-  `../img/img-carousel/banner-zapatillas.png"`,
-  `../img/img-carousel/pantalones-banner.png"`
+  `/assets/img/img-carousel/banner.jpg`,
+  `/assets/img/img-carousel/camiseta-seleccion.png`,
+  `/assets/img/img-carousel/banner-zapatillas.png`,
+  `/assets/img/img-carousel/pantalones-banner.png`
 ];
 
 
-function recorridoLeft(){
+function recorridoLeft() {
   if (indice === 0) {
-    indice = imgs.length -1;
+    indice = imgs.length - 1;
   } else {
     indice--;
   }
-  
+
   imgCarr.src = imgs[indice];
 
 }
 
-function recorridoRight(){
+function recorridoRight() {
   if (indice === imgs.length - 1) {
     indice = 0;
   } else {
@@ -33,3 +34,5 @@ function recorridoRight(){
 
 btnLeft.addEventListener("click", recorridoLeft);
 btnRight.addEventListener("click", recorridoRight);
+
+imgCarr.src = imgs[indice];
