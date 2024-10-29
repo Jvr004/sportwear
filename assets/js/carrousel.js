@@ -1,6 +1,6 @@
-const imgCarr = document.getElementById(imgCarrousel);
-const btnLeft = document.getElementById(btnLeft);
-const btnRight = document.getElementById(btnRight);
+const imgCarr = document.getElementById("imgCarrousel");
+const btnLeft = document.getElementById("btnLeft");
+const btnRight = document.getElementById("btnRight");
 
 var indice = 0;
 
