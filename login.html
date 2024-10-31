@@ -19,73 +19,122 @@
 <body>
   <header></header>
   <main>
-    <h1>Cuenta de Usuario</h1>
+
+    <h2>Si tienes cuneta solo ingresa, sino puedes crearla </h2>
 
     <div class="section-containers">
 
       <!-- Seccion Login -->
       <section class="login">
         <h2>Acceder</h2>
+        
         <div class="container-login">
-          <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+
+          <form action="" onsubmit="return validarFormulario()" id="form">
+
             <label for="user-email">Email<span>*</span></label>
-            <input type="email" name="user-email" id="user-email" required>
+
+            <input type="email" name="user-email" id="user-email">
+
+            <p class="pMensajeError" id="emailError">El email permite letras números y caracteres </p>
 
             <label for="password">Contraseña <span>*</span></label>
-            <input type="password" name="password" id="password" required>
+
+            <input type="password" name="password" id="password">
+
+            <p class="pMensajeError" id="passwordError">La contraseña debe tener un mínimo de 4 a 12 digitos.</p>
 
             <div class="container-recuerdame">
 
-              <label for="remenber-me">Recuérdame</label>
+              <label for="remenber-me">Recuérdame
               <input type="checkbox" name="remenber-me" id="remenber-me" checked>
-              <span><a href="recuperar-password.html">¿Olvidaste la contraseña?</a></span>
+              </label>
+
+              <label class="reset-password"><a href="recuperar-password.html">¿Olvidaste la contraseña?</a>
+              </label>
 
             </div>
 
             <button type="submit">Iniciar Sesión</button>
+
           </form>
+
         </div>
+
       </section>
+
       <!-- Seccion Nuevo Usuarios -->
+
       <section class="new-user">
         <h2>Crear Cuenta Nuevo Usuario</h2>
         <div class="container-create-acount">
-          <form action="https://jvr004.github.io/sportwear/" method="post" autocomplete="on">
+          
+          <form action=""  onsubmit="return validarFormulario()" id="form">
 
+            <label for="nombre">Nombre<span>*</span>
+            </label>
+            
+            <input type="text" name="nombre" id="nombre" placeholder="Mi Nombre" >
+            
+            <p class="pMensajeError" id="nombreError">El 
+            Nombre debe contener solo letras y espacios un máximo de 15 caracteres</p>
 
-            <label for="fname">Nombre<span>*</span></label>
-            <input type="text" name="fname" id="fname" placeholder="Mi Nombre" required>
-
-            <label for="last-name">Apellido<span>*</span></label>
-            <input type="text" name="last-name" id="last-name" placeholder="Mi apellido" required>
+            <label for="apellido">Apellido<span>*</span></label>
+            
+            <input type="text" name="apellido" id="apellido" placeholder="Mi apellido" >
+            
+            <p class="pMensajeError" id="apellidoError">El Apellido debe contener solo letras y espacios un máximo de 15 caracteres
+            </p>
 
             <label for="user-email">Email<span>*</span></label>
-            <input type="email" name="user-email" id="user-email" placeholder="email@email.com" required>
+            
+            <input type="email" name="user-email" id="user-email" placeholder="tu-email@email.com" >
+            
+            <p class="pMensajeError" id="emailError">El email permite letras números y caracteres </p>
 
             <label for="password">Contraseña <span>*</span></label>
-            <input type="password" name="password" id="password" required>
+
+            <input type="password" name="password" id="password" >
+
+            <p class="pMensajeError" id="passwordError">La contraseña debe tener un mínimo de 4 a 12 digitos.</p>
 
 
-            <label for="fecha-nac">Fecha de Nacimiento<span>*</span></label>
-            <input type="date" name="fecha-nac" id="fecha-nac" min="2006-01-01" required>
+            <label for="fecha-nac">Fecha de Nacimiento<span>*</span>
+            </label>
+
+            <input type="date" name="fecha-nac" id="fecha-nac" min="2006-01-01" >
 
             <div class="container-term-condiciones">
 
-              <label for="terminos-condiciones">Acepto terminos y condiciones <span>*</span></label>
-              <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" required>
-              <div class="terminos-condiciones"><a href="#">Terminso y condiciones</a></div>
+              <label for="terminos-condiciones">Acepto terminos y condiciones <span>*</span>
+              </label>
+
+              <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" >
+
+              <div class="terminos-condiciones"><a href="#">Terminso y condiciones</a>
+              </div>
 
             </div>
-              
-              <button type="submit">Crear Cuenta</button>
-            <button type="reset">Limpiar campos</button>
+
+            <button type="submit">Crear Cuenta</button>
+
+            <p class="mensajeExitoso" id="mensajeExitoso"></p>
+
           </form>
+
         </div>
+
       </section>
+
     </div>
+
   </main>
   <footer></footer>
+  
   <script src="assets/js/header-footer.js"></script>
+  
+  <script src="assets/js/validar-form-login.js"></script>
+
 </body>
 
 </html>

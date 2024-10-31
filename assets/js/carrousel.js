@@ -5,6 +5,8 @@ const imgCarr = document.getElementById("imgCarrousel");
 let indice = 0;
 
 const imgs = [
+  
+  `./assets/img/img-carousel/feos.jpg`,
   `./assets/img/img-carousel/banner.jpg`,
   `./assets/img/img-carousel/camiseta-seleccion.png`,
   `./assets/img/img-carousel/banner-zapatillas.png`,
