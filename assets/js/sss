@@ -1,3 +1,4 @@
+
 function validarFormulario() {
 
   const expresiones = {
@@ -17,6 +18,7 @@ function validarFormulario() {
   const nombre = document.getElementById("nombre");
   const apellido = document.getElementById("apellido");
   const email = document.getElementById("user-email");
+  // const telefono = document.getElementById("tel");
   const password = document.getElementById("password");
   const mensajeExitoso = document.getElementById("mensajeExitoso");
 
@@ -33,6 +35,8 @@ function validarFormulario() {
   document.getElementById("apellidoError").style.display = "none";
 
   document.getElementById("emailError").style.display = "none";
+
+  // document.getElementById("telError").style.display = "none";
 
   document.getElementById("passwordError").style.display = "none";
 
@@ -53,6 +57,12 @@ function validarFormulario() {
     document.getElementById("emailError").style.display = "block";
     errores = true;
   }
+
+  // // Validar teléfono
+  // if (telefono.value.trim() === "") {
+  //   document.getElementById("telError").style.display = "block";
+  //   errores = true;
+  // }
 
   // Validar password
   if (password.value.trim() === "") {
